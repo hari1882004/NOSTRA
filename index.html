@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nostra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ─── ANNOUNCEMENT BAR ─── -->
+<div class="announcement-bar" id="announcementBar">
+  <span>Sign Up and <strong>GET 20% OFF</strong> for your first Order</span>
+  <button class="close-btn" onclick="document.getElementById('announcementBar').style.display='none'">&#x2715;</button>
+</div>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <a href="#" class="logo">Nostra</a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#new-arrivals">New Arrival</a></li>
+    <li><a href="#most-wanted">Most Wanted</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="toggleMenu()">&#x2715;</button>
+  <a href="#">Home</a>
+  <a href="#new-arrivals">New Arrival</a>
+  <a href="#most-wanted">Most Wanted</a>
+  <a href="collections.html">Collections</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<!-- ─── HERO SLIDER ─── -->
+<div class="hero">
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <img src="image/limited offer.jpg" alt="Fashion 1" />
+    <div class="slide-overlay">
+      <h1>Level up your style with our</h1>
+      <p>Summer Collections</p>
+      <a href="#" class="btn-outline">Shop Now &#8594;</a>
+    </div>
+  </div>
+  <!-- Slide 2 (Same image for infinite carousel) -->
+  <div class="slide">
+    <img src="image/limited offer.jpg" alt="Fashion 1" />
+    <div class="slide-overlay">
+      <h1>Level up your style with our</h1>
+      <p>Summer Collections</p>
+      <a href="#" class="btn-outline">Shop Now &#8594;</a>
+    </div>
+  </div>
+  <!-- Slide 3 (Same image for infinite carousel) -->
+  <div class="slide">
+    <img src="image/limited offer.jpg" alt="Fashion 1" />
+    <div class="slide-overlay">
+      <h1>Level up your style with our</h1>
+      <p>Summer Collections</p>
+      <a href="#" class="btn-outline">Shop Now &#8594;</a>
+    </div>
+  </div>
+
+  <button class="slider-arrow prev" onclick="changeSlide(-1)">&#8249;</button>
+  <button class="slider-arrow next" onclick="changeSlide(1)">&#8250;</button>
+</div>
+
+<!-- ─── BRANDS ─── -->
+<div class="brands-section section">
+  <p class="section-label">Brands</p>
+  <div class="brands-grid">
+    <div class="brand-item">
+      <div class="brand-icon circle"><i class="fab fa-behance"></i></div>
+      <span class="brand-name">Puma</span>
+    </div>
+    <div class="brand-item">
+      <div class="brand-icon plain"><i class="fab fa-adversal" style="font-size:36px;"></i></div>
+      <span class="brand-name">Adidas</span>
+    </div>
+    <div class="brand-item">
+      <div class="brand-icon plain"><i class="fab fa-squarespace"></i></div>
+      <span class="brand-name">Simple</span>
+    </div>
+    <div class="brand-item">
+      <div class="brand-icon plain"><i class="fas fa-leaf"></i></div>
+      <span class="brand-name">Leaves</span>
+    </div>
+    <div class="brand-item">
+      <div class="brand-icon circle"><i class="fab fa-behance"></i></div>
+      <span class="brand-name">Behance</span>
+    </div>
+    <div class="brand-item">
+      <div class="brand-icon plain"><i class="fab fa-twitch"></i></div>
+      <span class="brand-name">Twitch</span>
+    </div>
+    <div class="brand-item">
+      <div class="brand-icon plain"><i class="fas fa-leaf"></i></div>
+      <span class="brand-name">Leaves</span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── CUSTOMER EXPERIENCE ─── -->
+<div class="experience-section">
+  <div class="experience-header">
+    <h2>We Provide Best<br>Customer Experiences</h2>
+    <p class="experience-subtitle">We ensure that our customer have the best shopping experience</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <i class="fas fa-check-circle"></i>
+      <h4>Original Products</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-smile"></i>
+      <h4>Satisfaction Guarantee</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-broom"></i>
+      <h4>New Arrival Everyday</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-truck"></i>
+      <h4>Fast &amp; Free Shipping</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ─── NEW ARRIVALS ─── -->
+<div class="section" id="new-arrivals">
+  <p class="section-label">New Arrivals</p>
+  <div class="arrivals-grid">
+    <div class="arrival-card">
+      <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&q=80" alt="Floral Shirt" />
+      <div class="shop-overlay"><a href="#" class="btn-white">Shop Now &#8594;</a></div>
+    </div>
+    <div class="arrival-card">
+      <img src="image/pants.webp" alt="Pants" />
+      <div class="shop-overlay"><a href="#" class="btn-white">Shop Now &#8594;</a></div>
+    </div>
+    <div class="arrival-card">
+      <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=600&q=80" alt="Blue Shirt" />
+      <div class="shop-overlay"><a href="#" class="btn-white">Shop Now &#8594;</a></div>
+    </div>
+    <div class="arrival-card">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80" alt="Brown Jacket" />
+      <div class="shop-overlay"><a href="#" class="btn-white">Shop Now &#8594;</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── MOST WANTED ─── -->
+<div class="most-wanted-section" id="most-wanted">
+  <p class="section-label">Most Wanted</p>
+  <div class="products-scroll">
+    <!-- Card 1 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&q=80" alt="Product 1" />
+      <span class="sale-badge">sale</span>
+      <button class="wish-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <!-- Card 2 -->
+    <div class="product-card">
+      <img src="image/Floral Summer Shirt.jpg" alt="Product 2" />
+      <span class="sale-badge">sale</span>
+      <button class="wish-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <!-- Card 3 -->
+    <div class="product-card">
+      <img src="image/Shirt Party Red.jpg" alt="Product 3" />
+      <span class="sale-badge">sale</span>
+      <button class="wish-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <!-- Card 4 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&q=80" alt="Product 4" />
+      <span class="sale-badge">sale</span>
+      <button class="wish-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <!-- Card 5 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&q=80" alt="Product 5" />
+      <span class="sale-badge">sale</span>
+      <button class="wish-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <!-- Card 6 -->
+    <div class="product-card">
+      <img src="image/Floral Summer Shirt.jpg" alt="Product 6" />
+      <span class="sale-badge">sale</span>
+      <button class="wish-btn"><i class="far fa-heart"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── LIMITED OFFER BANNER ─── -->
+<div class="offer-banner">
+  <img src="image/limited offer.jpg" alt="Limited Offer" />
+  <div class="offer-content">
+    <h2>Limited Offer</h2>
+    <p>35% OFF on this for the first 30 Customers</p>
+    <a href="#" class="btn-offer">Shop Now &#8594;</a>
+  </div>
+</div>
+
+<!-- ─── NEWSLETTER ─── -->
+<div class="newsletter-section" id="contact">
+  <h2>Join our News Letter</h2>
+  <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+  <div class="newsletter-form">
+    <input type="email" placeholder="" />
+    <button class="btn-subscribe">Subscribe &#8594;</button>
+  </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">Nostra</div>
+  <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+  </div>
+  <div class="copyright">@ 2023 Nostra.com</div>
+</footer>
+<script src="java.js"></script>
+</body>
+</html>

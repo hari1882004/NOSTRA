@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collections - Nostra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="collections.css"/>
+</head>
+<body>
+
+<!-- ─── ANNOUNCEMENT BAR ─── -->
+<div class="announcement-bar" id="announcementBar">
+  <span>Sign Up and <strong>GET 20% OFF</strong> for your first Order</span>
+  <button class="close-btn" onclick="document.getElementById('announcementBar').style.display='none'">&#x2715;</button>
+</div>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <a href="index.html" class="logo">Nostra</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#new-arrivals">New Arrival</a></li>
+    <li><a href="index.html#most-wanted">Most Wanted</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="toggleMenu()">&#x2715;</button>
+  <a href="index.html">Home</a>
+  <a href="index.html#new-arrivals">New Arrival</a>
+  <a href="index.html#most-wanted">Most Wanted</a>
+  <a href="collections.html">Collections</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<!-- ─── COLLECTIONS PAGE ─── -->
+<div class="collections-container">
+  <!-- Sidebar Filters -->
+  <aside class="collections-sidebar">
+    <div class="filter-section">
+      <h3>Occasion</h3>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="occasion" value="Summer" /> Summer</label>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="occasion" value="Party" /> Party</label>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="occasion" value="Beach" /> Beach</label>
+    </div>
+    
+    <div class="filter-section">
+      <h3>Colors</h3>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="Red" /> Red</label>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="Blue" /> Blue</label>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="White" /> White</label>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="Green" /> Green</label>
+    </div>
+    
+    <div class="filter-section">
+      <h3>Arrivals</h3>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="arrival" value="New" /> New</label>
+      <label><input type="checkbox" class="filter-checkbox" data-filter="arrival" value="Old" /> Old</label>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="collections-main">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="collections-grid">
+      <div class="collection-product" data-occasion="Summer" data-color="Green" data-arrival="New">
+        <img src="image/Floral Summer Shirt.jpg" alt="Floral Summer Shirt" />
+        <h4>Floral Summer Shirt</h4>
+        <p>₹220</p>
+      </div>
+      <div class="collection-product" data-occasion="Summer" data-color="Green" data-arrival="New">
+        <img src="image/Summer Green.jpg" alt="Summer Green" />
+        <h4>Summer Green</h4>
+        <p>₹260</p>
+      </div>
+      <div class="collection-product" data-occasion="Party" data-color="Red" data-arrival="New">
+        <img src="image/Party Floral Shirt.jpg" alt="Party Floral Shirt" />
+        <h4>Party Floral Shirt</h4>
+        <p>₹399</p>
+      </div>
+      <div class="collection-product" data-occasion="Summer" data-color="Blue" data-arrival="Old">
+        <img src="image/Floral Summer Shirt 399.jpg" alt="Floral Summer Shirt" />
+        <h4>Floral Summer Shirt</h4>
+        <p>₹320</p>
+      </div>
+      <div class="collection-product" data-occasion="Beach" data-color="Blue" data-arrival="New">
+        <img src="image/Beach Shirt.jpg" alt="Beach Shirt" />
+        <h4>Beach Shirt</h4>
+        <p>₹570</p>
+      </div>
+      <div class="collection-product" data-occasion="Party" data-color="Red" data-arrival="New">
+        <img src="image/Shirt Party Red.jpg" alt="Shirt Party Red" />
+        <h4>Shirt Party Red</h4>
+        <p>₹879</p>
+      </div>
+      <div class="collection-product" data-occasion="Party" data-color="White" data-arrival="Old">
+        <img src="image/Party Floral Shirt 399.jpg" alt="Party Floral Shirt" />
+        <h4>Party Floral Shirt</h4>
+        <p>₹280</p>
+      </div>
+      <div class="collection-product" data-occasion="Party" data-color="Red" data-arrival="Old">
+        <img src="image/Shirt Party Red.jpg" alt="Shirt Party Red" />
+        <h4>Shirt Party Red</h4>
+        <p>₹679</p>
+      </div>
+      <div class="collection-product" data-occasion="Summer" data-color="Green" data-arrival="New">
+        <img src="image/Floral Summer Shirt.jpg" alt="Floral Summer Shirt" />
+        <h4>Floral Summer Shirt</h4>
+        <p>₹220</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ─── NEWSLETTER ─── -->
+<div class="newsletter-section" id="contact">
+  <h2>Join our News Letter</h2>
+  <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+  <div class="newsletter-form">
+    <input type="email" placeholder="" />
+    <button class="btn-subscribe">Subscribe &#8594;</button>
+  </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">Nostra</div>
+  <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+  </div>
+  <div class="copyright">@ 2023 Nostra.com</div>
+</footer>
+
+<script src="java.js"></script>
+<script>
+  // Collection page filtering
+  document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+    checkbox.addEventListener('change', filterProducts);
+  });
+
+  // Search functionality
+  document.getElementById('searchInput').addEventListener('input', filterProducts);
+
+  function filterProducts() {
+    const occasionFilters = Array.from(document.querySelectorAll('[data-filter="occasion"]:checked')).map(cb => cb.value);
+    const colorFilters = Array.from(document.querySelectorAll('[data-filter="color"]:checked')).map(cb => cb.value);
+    const arrivalFilters = Array.from(document.querySelectorAll('[data-filter="arrival"]:checked')).map(cb => cb.value);
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+
+    const products = document.querySelectorAll('.collection-product');
+
+    products.forEach(product => {
+      const productOccasion = product.getAttribute('data-occasion');
+      const productColor = product.getAttribute('data-color');
+      const productArrival = product.getAttribute('data-arrival');
+      const productName = product.querySelector('h4').textContent.toLowerCase();
+
+      const occasionMatch = occasionFilters.length === 0 || occasionFilters.includes(productOccasion);
+      const colorMatch = colorFilters.length === 0 || colorFilters.includes(productColor);
+      const arrivalMatch = arrivalFilters.length === 0 || arrivalFilters.includes(productArrival);
+      const searchMatch = searchQuery === '' || productName.includes(searchQuery);
+
+      if (occasionMatch && colorMatch && arrivalMatch && searchMatch) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  }
+</script>
+</body>
+</html>
